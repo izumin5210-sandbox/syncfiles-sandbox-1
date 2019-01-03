@@ -1,6 +1,6 @@
 files:
 - src:
-    path: api/protos/books.proto
+    path: api/protos/todo.proto
   dests:
   - repo: izumin5210-sandbox/syncfiles-sandbox-1
     path: api/protos/1
