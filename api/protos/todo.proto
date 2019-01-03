@@ -4,7 +4,6 @@ package izumin5210_sandbox.todoapp_grapi;
 
 option go_package = "github.com/izumin5210-sandbox/todoapp-grapi/api;api_pb";
 
-
 import "google/api/annotations.proto";
 import "google/protobuf/empty.proto";
 
@@ -12,11 +11,6 @@ service TodoService {
   rpc ListTodos (ListTodosRequest) returns (ListTodosResponse) {
     option (google.api.http) = {
       get: "/todos"
-    };
-  }
-  rpc GetTodo (GetTodoRequest) returns (Todo) {
-    option (google.api.http) = {
-      get: "/todos/{todo_id}"
     };
   }
   rpc CreateTodo (CreateTodoRequest) returns (Todo) {
@@ -49,10 +43,6 @@ message ListTodosRequest {
 
 message ListTodosResponse {
   repeated Todo todos = 1;
-}
-
-message GetTodoRequest {
-  string todo_id = 1;
 }
 
 message CreateTodoRequest {
