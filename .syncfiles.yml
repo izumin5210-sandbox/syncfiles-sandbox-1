@@ -1,4 +1,4 @@
-files:
+entries:
 - src:
     path: api/protos/todo.proto
   dests:
